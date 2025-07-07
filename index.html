@@ -163,7 +163,32 @@
    0%, 100% { opacity: 0.8; }
    50% { opacity: 0.3; }
    }
-  </style>
+  
+.reflectify-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: linear-gradient(to right, #9575cd, #7e57c2);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(155, 89, 182, 0.6);
+  animation: pulseGlow 3s infinite ease-in-out;
+  transition: transform 0.3s ease;
+}
+.reflectify-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(126, 87, 194, 0.9);
+}
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 10px rgba(126, 87, 194, 0.4); }
+  50% { box-shadow: 0 0 25px rgba(126, 87, 194, 0.8); }
+  100% { box-shadow: 0 0 10px rgba(126, 87, 194, 0.4); }
+}
+
+</style>
  </head>
  <body>
   <header>
@@ -213,7 +238,7 @@
    </div>
    <div class="section" id="disorders">
     <h2>
-     🧠 Various Mental Health Causes &amp; Their Outcomes
+     🧠 Various Mental Health Issues &amp; Their Outcomes
     </h2>
     <div class="disorder">
      <h3>
@@ -527,8 +552,17 @@
     <button onclick="showAnswer()">
      💡
     </button>
-    <div id="answerText" style="margin-top:1rem; color:#555;">
-    </div>
+    
+<div id="answerText" style="margin-top:1rem; color:#555;"></div>
+<div style="margin-top:2rem; text-align:center;">
+  <p style="font-size:1.2rem; font-style:italic; color:#5e35b1;">
+    Want to explore deeper and discover more about yourself?
+  </p>
+  <a href="https://evanescentcodes.github.io/REFLECTIFY/" target="_blank" class="reflectify-link">
+    ✨ Take the Self-Reflection Quiz →
+  </a>
+</div>
+
    </div>
    <div class="healthy-box" id="mind-model">
     <h3>
@@ -617,7 +651,7 @@
    <footer>
     🌟 You are enough. You are not alone. Healing is possible and you're already on your way 💖
     <br/>
-    Thank you for visiting — Created by Hrisheekesh Gogoi, Nehaarika Borah, Simran Malakar  🐼
+    Thank you for visiting — Created by Hrisheekesh Gogoi, Nehaarika Borah and Simran Malakar  🐼
     <br/>
     LUMENA © 2025
    </footer>
