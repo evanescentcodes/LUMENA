@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   LUMENA - Mental Health Support
+  </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #e6f2ff, #fceefc);
+      color: #333;
+    }
+    header {
+      background: #673ab7;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #9575cd;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .intro-text {
+      padding: 2rem;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      background: #fff3e0;
+      border-radius: 1rem;
+      margin: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .positivity-box {
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #ffecb3;
+      border-radius: 1rem;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+      position: relative;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+    .positivity-box img {
+      width: 80px;
+      position: absolute;
+      top: -60px;
+      right: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+    #quoteText {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    #refreshBtn {
+      font-size: 1.5rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    .section {
+      padding: 2rem;
+      margin: 1rem;
+      background: #ffffffcc;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .section:hover {
+      transform: scale(1.02);
+    }
+    .disorder {
+      padding: 2rem;
+      background: #fff;
+      margin: 1rem 0;
+      border-radius: 1rem;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .disorder:hover {
+      transform: scale(1.02);
+    }
+    .disorder h3 {
+      color: #5e35b1;
+      margin-bottom: 0.5rem;
+    }
+    .solution {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f3e5f5;
+      border-left: 5px solid #ab47bc;
+      border-radius: 0.5rem;
+    }
+    .healthy-box {
+      margin: 2rem;
+      padding: 2rem;
+      background: #d0f4de;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .healthy-box h3 {
+      color: #2e7d32;
+      margin-bottom: 1rem;
+    }
+    .healthy-box ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    footer {
+      background: #4a148c;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-size: 1.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 50%;
+      background-color: #ab47bc;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    a {
+      color: #1a237e;
+      text-decoration: underline;
+    }
+    body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #.    ffffff66 1px, transparent 1px);
+    background-size: 20px 20px;
+    pointer-events: none;
+    animation: twinkle 4s linear infinite;
+    z-index: 0;
+    }
+   @keyframes twinkle {
+   0%, 100% { opacity: 0.8; }
+   50% { opacity: 0.3; }
+   }
+  </style>
+ </head>
+ <body>
+  <header>
+   <h1>
+    LUMENA
+   </h1>
+   <p>
+    Light Unfolds Mental Embrace, Nurtures All ✨
+   </p>
+  
+<div style="background:#ede7f6; color:#4a148c; padding:1rem; margin:1rem auto; border-radius:1rem; max-width:600px; font-style:italic; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+  “Even the dimmest amber can light the sky.”
+</div>
+
+</header>
+  <nav>
+  <a href="#intro">Intro</a>
+  <a href="#positivity">Positivity</a>
+  <a href="#disorders">Mental Health Issues</a>
+  <a href="#healthy">Healthy Practices</a>
+  <a href="#avoid">Avoid</a>
+  <a href="#reflection">Reflection</a>
+  <a href="#mind-model">3D Brain</a>
+  <a href="#narrative">Narrative</a>
+  <a href="#future-note">Note</a>
+  <a href="#helplines">Helplines</a>
+</nav>
+   <div class="intro-text" id="intro" style="background: #fff3e0; border-radius: 1rem; margin: 2rem; padding: 2rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1); font-size: 1.2rem; line-height: 1.8;">
+    <h2>
+     Welcome to LUMENA 🌿
+    </h2>
+    <p>
+     This platform is a comforting corner for those navigating mental health challenges. We provide understanding, solutions, and positivity through interactive support. You are safe here, and you matter deeply. Explore each section to learn, reflect, and grow stronger.
+    </p>
+   </div>
+   <div class="positivity-box" id="positivity">
+    <h3 style="font-size: 1.8rem; font-weight: bold;">
+     🪷 Positivity Box 🪷
+    </h3>
+    <img alt="3D Panda" src="https://media.tenor.com/hPOUFf0RTmIAAAAi/cute-baby.gif"/>
+    <div id="quoteText">
+     You are worthy of every good thing 💖
+    </div>
+    <button id="refreshBtn" onclick="newQuote()">
+     🔄
+    </button>
+   </div>
+   <div class="section" id="disorders">
+    <h2>
+     🧠 Various Mental Health Causes &amp; Their Outcomes
+    </h2>
+    <div class="disorder">
+     <h3>
+      Anxiety
+     </h3>
+     <p>
+      Anxiety involves excessive fear, worry, and behavioral disturbances. It can interfere with daily activities and relationships.
+     </p>
+     <ul>
+      <li>
+       Restlessness or feeling on edge
+      </li>
+      <li>
+       Rapid heartbeat
+      </li>
+      <li>
+       Trouble concentrating
+      </li>
+      <li>
+       Sleep disturbances
+      </li>
+      <li>
+       Constant worry or fear
+      </li>
+     </ul>
+     <div class="solution">
+      <strong>
+       Solution:
+      </strong>
+      Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
+     </div>
+     <p>
+      <a href="https://youtu.be/ZtBlAXo8LsY?si=fm_2g6sUIcYm67_M" target="_blank">
+       Learn More
+      </a>
+     </p>
+     <p>
+     </p>
+    </div>
+    <div class="disorder">
+     <h3>
+      Depression
+     </h3>
+     <p>
+      More than feeling sad — it can cause a persistent loss of interest, hopelessness, and even physical pain.
+     </p>
+     <ul>
+      <li>
+       Persistent sadness or emptiness
+      </li>
+      <li>
+       Loss of interest in daily activities
+      </li>
+      <li>
+       Fatigue or low energy
+      </li>
+      <li>
+       Changes in appetite or weight
+      </li>
+      <li>
+       Thoughts of self-harm or death
+      </li>
+     </ul>
+     <div class="solution">
+      <strong>
+       Solution:
+      </strong>
+      Seek talk therapy, get regular exercise, maintain routines, and consider antidepressants with guidance.
+     </div>
+     <p>
+      <a href="https://youtu.be/Ii53BtHLnGk?si=KSkmlrOhcy1eFtf1" target="_blank">
+       Learn More
+      </a>
+     </p>
+     <p>
+     </p>
+    </div>
+    <div class="disorder">
+     <h3>
+      PTSD
+     </h3>
+     <p>
+      Post-Traumatic Stress Disorder stems from traumatic events and includes flashbacks, nightmares, and emotional numbness.
+     </p>
+     <ul>
+      <li>
+       Intrusive memories or flashbacks
+      </li>
+      <li>
+       Nightmares or sleep issues
+      </li>
+      <li>
+       Emotional detachment
+      </li>
+      <li>
+       Hypervigilance
+      </li>
+      <li>
+       Avoidance of reminders
+      </li>
+     </ul>
+     <div class="solution">
+      <strong>
+       Solution:
+      </strong>
+      Supportive therapy, EMDR, grounding techniques, and community support groups.
+     </div>
+     <p>
+      <a href="https://youtu.be/qlYvyPtYcwc?si=Z9iMPffOmIMNItYP" target="_blank">
+       Learn More
+      </a>
+     </p>
+     <p>
+     </p>
+    </div>
+    <div class="disorder">
+     <h3>
+      OCD
+     </h3>
+     <p>
+      Obsessive-Compulsive Disorder includes intrusive thoughts (obsessions) and repetitive behaviors (compulsions).
+     </p>
+     <ul>
+      <li>
+       Unwanted, repeated thoughts
+      </li>
+      <li>
+       Compulsive hand-washing or checking
+      </li>
+      <li>
+       Need for symmetry or order
+      </li>
+      <li>
+       Anxiety if rituals aren't performed
+      </li>
+      <li>
+       Difficulty focusing due to obsessions
+      </li>
+     </ul>
+     <div class="solution">
+      <strong>
+       Solution:
+      </strong>
+      Exposure Response Prevention (ERP) therapy, SSRIs, and mindfulness-based CBT.
+     </div>
+     <p>
+      <a href="https://youtu.be/u_qfAtvX8Os?si=FYAvBgaXWVPDyGRu" target="_blank">
+       Learn More
+      </a>
+     </p>
+     <p>
+     </p>
+    </div>
+    <div class="disorder">
+     <h3>
+      ADHD
+     </h3>
+     <p>
+      Attention Deficit Hyperactivity Disorder is marked by impulsivity, hyperactivity, and difficulty focusing or sitting still.
+     </p>
+     <ul>
+      <li>
+       Inattention or forgetfulness
+      </li>
+      <li>
+       Impulsive actions
+      </li>
+      <li>
+       Hyperactivity or fidgeting
+      </li>
+      <li>
+       Trouble staying organized
+      </li>
+      <li>
+       Interrupting others or blurting out
+      </li>
+     </ul>
+     <div class="solution">
+      <strong>
+       Solution:
+      </strong>
+      Use planners, break tasks into chunks, behavior therapy, and stimulant medications under guidance.
+     </div>
+     <p>
+      <a href="https://youtu.be/Dm_q2lIF30g?si=QewWMJbnjiN3A305" target="_blank">
+       Learn More
+      </a>
+     </p>
+     <p>
+     </p>
+    </div>
+    <div class="disorder">
+     <h3>
+      Eating Disorders
+     </h3>
+     <p>
+      Includes anorexia, bulimia, and binge-eating. These are serious illnesses affecting physical and mental health.
+     </p>
+     <ul>
+      <li>
+       Preoccupation with weight or body image
+      </li>
+      <li>
+       Extreme food restriction or bingeing
+      </li>
+      <li>
+       Purging through vomiting or laxatives
+      </li>
+      <li>
+       Distorted body perception
+      </li>
+      <li>
+       Social withdrawal or shame about eating
+      </li>
+     </ul>
+     <div class="solution">
+      <strong>
+       Solution:
+      </strong>
+      Nutritional counseling, family therapy, and working with an eating disorder specialist.
+     </div>
+     <p>
+      <a href="https://www.nimh.nih.gov/health/topics/eating-disorders" target="_blank">
+       Learn More
+      </a>
+     </p>
+     <p>
+     </p>
+    </div>
+   </div>
+   <div class="healthy-box" id="healthy">
+    <h3>
+     🌿 Healthy Practices, Eating Habits, and Exercises
+    </h3>
+    <ul>
+     <li>
+      Practice mindfulness meditation or guided relaxation daily.
+     </li>
+     <li>
+      Stay physically active – aim for at least 30 minutes of moderate activity most days.
+     </li>
+     <li>
+      Eat balanced meals rich in fruits, vegetables, omega-3, and fiber.
+     </li>
+     <li>
+      Stay hydrated and limit caffeine and sugar.
+     </li>
+     <li>
+      Sleep at least 7–9 hours daily with a consistent bedtime routine.
+     </li>
+     <li>
+      Maintain a gratitude journal to reflect on daily positives.
+     </li>
+     <li>
+      Engage in hobbies, creative outlets, or activities that bring joy.
+     </li>
+     <li>
+      Connect with loved ones or support groups regularly.
+     </li>
+    </ul>
+    <p>
+     <a href="https://www.healthline.com/health/mental-health/self-care" target="_blank">
+      Learn More
+     </a>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+   </div>
+   <div class="healthy-box" id="avoid">
+    <h3>
+     🚫 Things to Avoid
+    </h3>
+    <ul>
+     <li>
+      Overconsumption of alcohol or recreational drugs.
+     </li>
+     <li>
+      Suppressing emotions instead of expressing them healthily.
+     </li>
+     <li>
+      Spending excessive time on social media.
+     </li>
+     <li>
+      Neglecting your needs for the sake of productivity.
+     </li>
+     <li>
+      Negative self-talk and toxic relationships.
+     </li>
+    </ul>
+    <p>
+     <a href="https://www.verywellmind.com/mental-health-habits-to-avoid-5198323" target="_blank">
+      Learn More
+     </a>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+   </div>
+   <div class="healthy-box" id="reflection">
+    <h3>
+     💭 Reflection Corner
+    </h3>
+    <div id="questionText" style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+    </div>
+    <button onclick="newQuestion()">
+     🔄 New Question
+    </button>
+    <button onclick="showAnswer()">
+     💡
+    </button>
+    <div id="answerText" style="margin-top:1rem; color:#555;">
+    </div>
+   </div>
+   <div class="healthy-box" id="mind-model">
+    <h3>
+     🧠 Explore the 3D Brain
+    </h3>
+    <iframe allowfullscreen="" frameborder="0" height="480" src="https://sketchfab.com/models/7a27c17fd6c0488bb31ab093236a47fb/embed" title="Human Brain 3D Model" width="100%">
+    </iframe>
+    <p style="margin-top:1rem;">
+     Interactive 3D brain model — rotate, zoom, and explore regions related to mental health.
+    </p>
+   </div>
+   <div class="healthy-box" id="narrative">
+    <h3>
+     📖 Calming Narratives
+    </h3>
+    <p>
+     “You are lying in a meadow. The sun warms your skin. The breeze whispers that you are safe. You breathe in deeply — and let go.”
+    </p>
+    <p>
+     Come back to this moment whenever the world feels heavy.
+    </p>
+   </div>
+   <div class="healthy-box" id="future-note">
+    <h3>
+     💌 A Note to Future Me
+    </h3>
+    <textarea id="noteInput" placeholder="Write something kind to your future self..." style="width:100%;height:80px;"></textarea>
+    <button onclick="saveNote()">
+     Save Note
+    </button>
+    <button onclick="loadNote()">
+     Read My Note
+    </button>
+    <div id="savedNote" style="margin-top:1rem; color:#444;">
+    </div>
+   </div>
+   <!-- 🌟 Mental Health Helpline Numbers Section -->
+   <div class="healthy-box" id="helplines">
+    <h3>
+     📞 Mental Health Helpline Numbers
+    </h3>
+    <ul>
+     <li>
+      <strong>
+       iCall (TISS, India):
+      </strong>
+      +91 9152987821 (Available 24x7)
+     </li>
+     <li>
+      <strong>
+       AASRA:
+      </strong>
+      +91-9820466726 (24x7 Helpline)
+     </li>
+     <li>
+      <strong>
+       Vandrevala Foundation Helpline:
+      </strong>
+      1860 266 2345 or 1800 233 3330
+     </li>
+     <li>
+      <strong>
+       Samaritans Mumbai:
+      </strong>
+      +91 84229 84528 / 29 / 30 (3 PM – 9 PM)
+     </li>
+     <li>
+      <strong>
+       NIMHANS Helpline:
+      </strong>
+      080-46110007 (Toll-Free, India)
+     </li>
+     <li>
+      <strong>
+       Childline (for children):
+      </strong>
+      1098
+     </li>
+    </ul>
+    <p style="margin-top:1rem;">
+     <em>
+      If you're struggling, please don’t hesitate to reach out. Help is always just a call away. 🌼
+     </em>
+    </p>
+   </div>
+   <footer>
+    🌟 You are enough. You are not alone. Healing is possible and you're already on your way 💖
+    <br/>
+    Thank you for visiting — Created by Hrisheekesh Gogoi, Nehaarika Borah, Simran Malakar  🐼
+    <br/>
+    LUMENA © 2025
+   </footer>
+   <button id="topBtn" onclick="scrollToTop()">
+    ⬆️
+   </button>
+   <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    const quotes = [
+      "You are strong, loved, and never alone 💛",
+      "Every storm eventually runs out of rain ⛅",
+      "You have survived 100% of your worst days 💝",
+      "Take it one breath at a time 🌬️",
+      "Your existence makes this world better 💖",
+      "Rest is productive too 🌙",
+      "It's okay to ask for help 🤝",
+      "You’re doing better than you think 💫",
+  "Healing is not a straight line, and that’s okay 🌱",
+  "You are not broken — you are breaking through 💫",
+  "Your story isn’t over yet. Hold on 🌟",
+  "Even the darkest night will end, and the sun will rise 🌞",
+  "Be gentle with yourself. You're doing the best you can 🤍",
+  "Small steps every day lead to big changes 🍂",
+  "You are more than your thoughts — you are light 💡",
+  "It's okay to rest. Your soul needs it too 🌙",
+  "You’ve made it this far — that’s strength 💪",
+  "Your mind is a garden. Nourish it with kindness 🌼",
+  "Sometimes, the most powerful healing is simply allowing yourself to be seen as you are.",
+  "The cracks in your soul let the light enter — don’t hide them.",
+  "You are not behind in life; you are blooming in your own time.",
+  "Even the moon goes through phases, yet it is always whole.",
+  "Peace begins the moment you choose not to allow another person or event to control your emotions."];
+
+    function newQuote() {
+      const quoteText = document.getElementById("quoteText");
+      const random = quotes[Math.floor(Math.random() * quotes.length)];
+      quoteText.textContent = random;
+    }
+const questions = [
+  ["What is one thing I’m grateful for today?", "Gratitude brings focus to the good — even a small smile counts."],
+  ["What emotion am I feeling right now?", "Acknowledging your emotion helps you understand and heal."],
+  ["What would I tell a friend who felt like I do?", "Be as kind to yourself as you’d be to them."],
+  ["What’s one memory that makes me feel calm?", "Reliving peaceful moments can ground you in the now."],
+  ["How can I show love to myself today?", "Love can mean rest, gentleness, or standing up for yourself."],
+  ["What thoughts have I been avoiding?", "Avoided thoughts often need your attention, not your fear."],
+  ["What does healing look like for me?", "Healing is your own journey — not a race or comparison."],
+  ["How can I let go of what’s not in my control?", "Surrendering isn’t weakness — it’s peace."],
+  ["What do I need to feel safe today?", "Your needs matter. Safety is the foundation of healing."],
+  ["Who truly supports and sees me?", "Lean on those who love the real you."],
+  ["What brings me joy that I’ve neglected?", "Revisit that joy — it’s a part of your truth."],
+  ["What kind words can I offer myself right now?", "Self-kindness is the softest power."],
+  ["How has today challenged or grown me?", "Every challenge leaves a seed of wisdom."],
+  ["What would I do if I truly believed I was enough?", "You are. So take that first step."],
+  ["Where in my body am I holding tension?", "Breathe into it. Let it know it can soften."]
+];
+
+let currentQuestionIndex = 0;
+
+function newQuote() {
+  const quoteText = document.getElementById("quoteText");
+  const random = quotes[Math.floor(Math.random() * quotes.length)];
+  quoteText.textContent = random;
+}
+
+function newQuestion() {
+  const i = Math.floor(Math.random() * questions.length);
+  currentQuestionIndex = i;
+  document.getElementById("questionText").textContent = questions[i][0];
+  document.getElementById("answerText").textContent = "";
+}
+
+function showAnswer() {
+  document.getElementById("answerText").textContent = questions[currentQuestionIndex][1];
+}
+
+function saveNote() {
+  const note = document.getElementById("noteInput").value;
+  if (note.trim()) {
+    localStorage.setItem("futureNote", note);
+    alert("Note saved! Come back soon to read it.");
+  }
+}
+
+function loadNote() {
+  const saved = localStorage.getItem("futureNote");
+  document.getElementById("savedNote").textContent = saved ? saved : "No note saved yet.";
+}
+   </script>
+  </nav>
+ </body>
+</html>
