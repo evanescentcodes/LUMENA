@@ -187,7 +187,25 @@
   50% { box-shadow: 0 0 25px rgba(126, 87, 194, 0.8); }
   100% { box-shadow: 0 0 10px rgba(126, 87, 194, 0.4); }
 }
-
+.more-text {
+  display: none;
+}
+.read-more-btn {
+  background: linear-gradient(to right, #9575cd, #7e57c2);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(126, 87, 194, 0.5);
+  transition: transform 0.3s ease;
+}
+.read-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(126, 87, 194, 0.8);
+}
 </style>
  </head>
  <body>
@@ -240,233 +258,190 @@
      🧠 Various Mental Health Issues &amp; Their Outcomes
     </h2>
     <div class="disorder">
-     <h3>
-      Anxiety
-     </h3>
-     <p>
-      Anxiety involves excessive fear, worry, and behavioral disturbances. It can interfere with daily activities and relationships.
-     </p>
-     <ul>
-      <li>
-       Restlessness or feeling on edge
-      </li>
-      <li>
-       Rapid heartbeat
-      </li>
-      <li>
-       Trouble concentrating
-      </li>
-      <li>
-       Sleep disturbances
-      </li>
-      <li>
-       Constant worry or fear
-      </li>
-     </ul>
-     <div class="solution">
-      <strong>
-       Solution:
-      </strong>
-      Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
-     </div>
-     <p>
-      <a href="https://youtu.be/ZtBlAXo8LsY?si=fm_2g6sUIcYm67_M" target="_blank">
-       Learn More
-      </a>
-     </p>
-     <p>
-     </p>
-    </div>
+  <h3>Anxiety</h3>
+  <p>
+    Anxiety disorder is a mental health condition where a person experiences intense, persistent worry or fear that’s difficult to control. Unlike normal stress that comes and goes, anxiety lingers — often without any clear reason — and affects the way a person thinks, feels, and behaves on a daily basis.
+    <span class="dots">...</span>
+  </p>
+  <div class="more-text">
+    <p>It’s not just "nerves" or being overly cautious; it’s a deeper, often overwhelming response to perceived threats.</p>
+    <p>In people with anxiety, the brain becomes excessively alert, constantly scanning for danger — even when no real threat exists. This heightened state triggers emotional and physical symptoms such as chronic fear, restlessness, racing thoughts, rapid heartbeat, sweating, or even dizziness.</p>
+    <p>It goes beyond normal stress and can appear as generalized anxiety (worrying about everything), panic attacks, social anxiety, or specific phobias.</p>
+    <p>The root causes include an overactive amygdala (fear center), underactive prefrontal cortex (rational thinking), genetic predisposition, childhood trauma, environmental stressors, and certain personality traits like perfectionism or high sensitivity.</p>
+    <p>In everyday life, anxiety can make people avoid school, work, relationships, or social interactions. They may overthink, lose sleep, struggle to focus, feel physically sick, or live in a constant state of nervousness.</p>
+    <p>It can even lead to depression over time due to emotional exhaustion. Although often invisible to others, anxiety can deeply impact confidence, decision-making, and overall peace of mind.</p>
+  </div>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
+  <h4>🧾 Symptoms:</h4>
+  <ul>
+    <li>Restlessness or feeling on edge</li>
+    <li>Rapid heartbeat</li>
+    <li>Trouble concentrating</li>
+    <li>Sleep disturbances</li>
+    <li>Constant worry or fear</li>
+  </ul>
+  <div class="solution">
+    <strong>Solution:</strong>
+    Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
+  </div>
+  <p>
+    <a href="https://youtu.be/ZtBlAXo8LsY?si=fm_2g6sUIcYm67_M" target="_blank">Learn More</a>
+  </p>
+</div>
     <div class="disorder">
-     <h3>
-      Depression
-     </h3>
-     <p>
-      More than feeling sad — it can cause a persistent loss of interest, hopelessness, and even physical pain.
-     </p>
-     <ul>
-      <li>
-       Persistent sadness or emptiness
-      </li>
-      <li>
-       Loss of interest in daily activities
-      </li>
-      <li>
-       Fatigue or low energy
-      </li>
-      <li>
-       Changes in appetite or weight
-      </li>
-      <li>
-       Thoughts of self-harm or death
-      </li>
-     </ul>
-     <div class="solution">
-      <strong>
-       Solution:
-      </strong>
-      Seek talk therapy, get regular exercise, maintain routines, and consider antidepressants with guidance.
-     </div>
-     <p>
-      <a href="https://youtu.be/Ii53BtHLnGk?si=KSkmlrOhcy1eFtf1" target="_blank">
-       Learn More
-      </a>
-     </p>
-     <p>
-     </p>
-    </div>
+  <h3>Depression</h3>
+  <p>
+    Depression is a serious mental health disorder that goes far beyond occasional sadness. It involves a deep, persistent feeling of hopelessness, emptiness, or worthlessness that doesn’t easily go away. People with depression may lose interest in things they once loved and feel emotionally disconnected from the world around them.
+    <span class="dots">...</span>
+  </p>
+  <div class="more-text">
+    <p>More than just a bad mood, depression affects every part of a person’s daily life — how they think, feel, and even move. It can cause constant fatigue, sleep disturbances (either too much or too little), changes in appetite, and a lack of motivation to do even basic tasks like getting out of bed or taking a shower.</p>
+    <p>Biologically, depression is linked to changes in the brain. There’s often reduced activity in the prefrontal cortex (responsible for mood regulation and decision-making), an overactive amygdala (which heightens negative emotions), and a shrunken hippocampus (affecting memory and emotional strength). At the chemical level, there’s often an imbalance in neurotransmitters like serotonin, dopamine, and norepinephrine, which are crucial for mood and motivation.</p>
+    <p>Depression may be triggered by a variety of factors such as genetic vulnerability, childhood trauma, chronic stress, social isolation, low self-esteem, or hormonal changes. Sometimes, it can appear without any clear cause at all, which can make it even more confusing and painful for the person going through it.</p>
+    <p>In daily life, depression can make even the smallest tasks feel overwhelming. People might struggle to wake up, skip meals, avoid talking to others, lose focus at school or work, or feel like they’re moving through life in slow motion. It can create a sense of numbness, where emotions feel distant or entirely absent.</p>
+    <p>What makes depression especially cruel is that many people blame themselves for feeling this way, not realizing that it’s a medical condition, not a personal failure. Left untreated, it can worsen over time and may lead to self-harm or suicidal thoughts, which is why early care, understanding, and support are absolutely essential.</p>
+  </div>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
+<h4>🧾 Symptoms:</h4>
+  <ul>
+    <li>Restlessness or feeling on edge</li>
+    <li>Rapid heartbeat</li>
+    <li>Trouble concentrating</li>
+    <li>Sleep disturbances</li>
+    <li>Constant worry or fear</li>
+  </ul>
+  <div class="solution">
+    <strong>Solution:</strong>
+    Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
+  </div>
+  <p>
+    <a href="https://youtu.be/Ii53BtHLnGk?si=KSkmlrOhcy1eFtf1" target="_blank">Learn More</a>
+  </p>
+</div>
+   <div class="disorder">
+  <h3>PTSD</h3>
+  <p>
+   PTSD (Post-Traumatic Stress Disorder) is a serious mental health condition that develops after a person experiences or witnesses a traumatic, life-threatening, or deeply disturbing event. This could include abuse, accidents, natural disasters, violence, or combat. While fear is a natural response during danger, PTSD occurs when the brain stays “stuck” in survival mode even after the threat is gone. 
+    <span class="dots">...</span>
+  </p>
+  <div class="more-text">
+    <p>Instead of processing the trauma and returning to a sense of safety, the brain keeps reacting as if the danger is still present. This leads to overwhelming emotional and physical responses, making it hard to feel calm, safe, or connected. The trauma gets "trapped" in the nervous system, repeatedly resurfacing in painful and unexpected ways.</p>
+    <p>At the neurological level, PTSD causes major brain changes. The amygdala becomes overactive, creating a constant sense of fear and hypervigilance. The prefrontal cortex, responsible for reasoning and emotional control, becomes underactive, making it harder to manage reactions. Meanwhile, the hippocampus, which helps recognize that the trauma is in the past, shrinks, causing confusion between past and present danger.</p>
+    <p>At the neurological level, PTSD causes major brain changes. The amygdala becomes overactive, creating a constant sense of fear and hypervigilance. The prefrontal cortex, responsible for reasoning and emotional control, becomes underactive, making it harder to manage reactions. Meanwhile, the hippocampus, which helps recognize that the trauma is in the past, shrinks, causing confusion between past and present danger.</p>
+    <p>These brain changes result in intense symptoms such as flashbacks, nightmares, emotional numbness, irritability, panic attacks, and avoidance of anything that reminds the person of the trauma. Even simple triggers like a smell, sound, or place can cause overwhelming fear or a shutdown response.</p>
+    <p>In daily life, PTSD can make the world feel like a constant threat. Crowds may feel suffocating, loud sounds may cause panic, and trusting others can feel impossible. Many people withdraw from social life, battle with poor sleep and memory, and struggle to focus or feel present. They may blame themselves for not “getting over it,” but PTSD has nothing to do with weakness or willpower.</p>
+   <p>It’s important to understand that PTSD is a natural brain response to unnatural pain. Left untreated, it can deeply affect relationships, self-worth, and a person’s ability to feel hopeful or connected to life. But with time, support, and the right care, healing is absolutely possible.</p>
+  </div>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
+<h4>🧾 Symptoms:</h4>
+  <ul>
+    <li>Restlessness or feeling on edge</li>
+    <li>Rapid heartbeat</li>
+    <li>Trouble concentrating</li>
+    <li>Sleep disturbances</li>
+    <li>Constant worry or fear</li>
+  </ul>
+  <div class="solution">
+    <strong>Solution:</strong>
+    Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
+  </div>
+  <p>
+    <a href="https://youtu.be/qlYvyPtYcwc?si=Z9iMPffOmIMNItYP" target="_blank">Learn More</a>
+  </p>
+</div>
     <div class="disorder">
-     <h3>
-      PTSD
-     </h3>
-     <p>
-      Post-Traumatic Stress Disorder stems from traumatic events and includes flashbacks, nightmares, and emotional numbness.
-     </p>
-     <ul>
-      <li>
-       Intrusive memories or flashbacks
-      </li>
-      <li>
-       Nightmares or sleep issues
-      </li>
-      <li>
-       Emotional detachment
-      </li>
-      <li>
-       Hypervigilance
-      </li>
-      <li>
-       Avoidance of reminders
-      </li>
-     </ul>
-     <div class="solution">
-      <strong>
-       Solution:
-      </strong>
-      Supportive therapy, EMDR, grounding techniques, and community support groups.
-     </div>
-     <p>
-      <a href="https://youtu.be/qlYvyPtYcwc?si=Z9iMPffOmIMNItYP" target="_blank">
-       Learn More
-      </a>
-     </p>
-     <p>
-     </p>
-    </div>
+  <h3>OCD</h3>
+  <p>
+    OCD (Obsessive-Compulsive Disorder) is a chronic mental health condition marked by recurring, intrusive thoughts called obsessions, and repetitive actions or mental rituals called compulsions. These obsessions trigger intense anxiety, and the compulsions are meant to temporarily relieve that distress — but the cycle repeats again and again, trapping the person in a loop that’s hard to break.
+    <span class="dots">...</span>
+  </p>
+  <div class="more-text">
+    <p>It’s important to understand that OCD isn’t about being neat, tidy, or perfectionistic. It’s a distressing and exhausting disorder where the person often knows their thoughts are irrational but feels unable to stop the behaviors. The anxiety can become unbearable without performing the ritual — making OCD deeply disruptive to daily life.</p>
+    <p>Neurologically, OCD is linked to faulty brain circuits. The orbitofrontal cortex (OFC) becomes overactive, constantly sending danger signals or flagging minor issues as serious. The caudate nucleus and basal ganglia (which help filter out unnecessary thoughts) don’t function properly, allowing unwanted thoughts to stick. The anterior cingulate cortex (ACC) also becomes hyperactive, fueling the persistent feeling that something is “off” or incomplete.</p>
+    <p>OCD can be triggered or worsened by genetic predisposition, infections or brain inflammation, past trauma, or chronic stress. Some people experience a sudden onset (like in PANDAS syndrome), while others develop it gradually over time.</p>
+    <p>In daily life, OCD can be mentally and physically draining. A person might wash their hands until their skin is raw, check locks or stoves for hours, count steps, avoid certain numbers or colors, or repeat words or prayers in their mind. Others may isolate themselves out of fear of contamination or harming someone.</p>
+    <p>Even though most people with OCD are fully aware that their fears are irrational, the urge to perform rituals becomes overwhelming — not out of choice, but to reduce anxiety or guilt. Over time, OCD can severely impact school, relationships, confidence, and mental energy, often leading to shame, emotional burnout, and a sense of helplessness.</p>
+  </div>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
+<h4>🧾 Symptoms:</h4>
+  <ul>
+    <li>Restlessness or feeling on edge</li>
+    <li>Rapid heartbeat</li>
+    <li>Trouble concentrating</li>
+    <li>Sleep disturbances</li>
+    <li>Constant worry or fear</li>
+  </ul>
+  <div class="solution">
+    <strong>Solution:</strong>
+    Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
+  </div>
+  <p>
+    <a href="https://youtu.be/u_qfAtvX8Os?si=FYAvBgaXWVPDyGRu"target="_blank">Learn More</a>
+  </p>
+</div>
     <div class="disorder">
-     <h3>
-      OCD
-     </h3>
-     <p>
-      Obsessive-Compulsive Disorder includes intrusive thoughts (obsessions) and repetitive behaviors (compulsions).
-     </p>
-     <ul>
-      <li>
-       Unwanted, repeated thoughts
-      </li>
-      <li>
-       Compulsive hand-washing or checking
-      </li>
-      <li>
-       Need for symmetry or order
-      </li>
-      <li>
-       Anxiety if rituals aren't performed
-      </li>
-      <li>
-       Difficulty focusing due to obsessions
-      </li>
-     </ul>
-     <div class="solution">
-      <strong>
-       Solution:
-      </strong>
-      Exposure Response Prevention (ERP) therapy, SSRIs, and mindfulness-based CBT.
-     </div>
-     <p>
-      <a href="https://youtu.be/u_qfAtvX8Os?si=FYAvBgaXWVPDyGRu" target="_blank">
-       Learn More
-      </a>
-     </p>
-     <p>
-     </p>
-    </div>
+  <h3>ADHD</h3>
+  <p>
+    ADHD (Attention-Deficit/Hyperactivity Disorder) is a neurodevelopmental condition that affects a person’s ability to focus, regulate impulses, manage time, and stay organized. It typically begins in childhood, but for many, it continues into adolescence and adulthood, impacting various areas of life — from academics to relationships.
+    <span class="dots">...</span>
+  </p>
+  <div class="more-text">
+    <p>ADHD isn’t simply about being “hyper” or “easily distracted.” It’s a real brain-based disorder that affects how the mind processes information, controls behavior, and handles everyday responsibilities. It comes in three main types: inattentive (difficulty focusing), hyperactive-impulsive (excessive movement or talking, impulsivity), and combined (a mix of both).</p>
+    <p>In the brain, ADHD involves several functional differences. The prefrontal cortex, which handles planning, decision-making, and attention, is often underactive. The basal ganglia and cerebellum, which help control focus and movement, may be smaller or less active. Most importantly, dopamine pathways, which affect motivation, reward, and impulse control, are dysregulated, making it harder to feel naturally driven to complete tasks.</p>
+    <p>The causes of ADHD can include genetic factors, premature birth, prenatal exposure to toxins (like alcohol or tobacco), or early brain injuries. It’s not caused by poor parenting, screen time, or sugar — although these factors may influence symptoms.</p>
+    <p>In everyday life, ADHD can make simple tasks feel like mountains. Things like completing homework, following instructions, sitting still in class, or avoiding distractions can become constant struggles. People with ADHD may also act without thinking, jump between tasks, or feel overwhelmed in noisy or structured environments.</p>
+    <p>Sadly, many people with ADHD are misunderstood. They’re often labeled as lazy, rude, or irresponsible, when in reality, their brains just work differently — often faster, more scattered, or nonlinear. Despite this, individuals with ADHD can be creative, energetic, and intensely passionate when supported in the right way.</p>
+    <p>Without proper understanding and support, ADHD can lead to low self-esteem, poor academic performance, impulsive decision-making, and social difficulties. But with the right strategies, tools, and compassion, people with ADHD can thrive in their own unique rhythm.</p>
+  </div>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
+<h4>🧾 Symptoms:</h4>
+  <ul>
+    <li>Restlessness or feeling on edge</li>
+    <li>Rapid heartbeat</li>
+    <li>Trouble concentrating</li>
+    <li>Sleep disturbances</li>
+    <li>Constant worry or fear</li>
+  </ul>
+  <div class="solution">
+    <strong>Solution:</strong>
+    Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
+  </div>
+  <p>
+    <a href="https://youtu.be/Dm_q2lIF30g?si=QewWMJbnjiN3A305" target="_blank">Learn More</a>
+  </p>
+</div>
     <div class="disorder">
-     <h3>
-      ADHD
-     </h3>
-     <p>
-      Attention Deficit Hyperactivity Disorder is marked by impulsivity, hyperactivity, and difficulty focusing or sitting still.
-     </p>
-     <ul>
-      <li>
-       Inattention or forgetfulness
-      </li>
-      <li>
-       Impulsive actions
-      </li>
-      <li>
-       Hyperactivity or fidgeting
-      </li>
-      <li>
-       Trouble staying organized
-      </li>
-      <li>
-       Interrupting others or blurting out
-      </li>
-     </ul>
-     <div class="solution">
-      <strong>
-       Solution:
-      </strong>
-      Use planners, break tasks into chunks, behavior therapy, and stimulant medications under guidance.
-     </div>
-     <p>
-      <a href="https://youtu.be/Dm_q2lIF30g?si=QewWMJbnjiN3A305" target="_blank">
-       Learn More
-      </a>
-     </p>
-     <p>
-     </p>
-    </div>
-    <div class="disorder">
-     <h3>
-      Eating Disorders
-     </h3>
-     <p>
-      Includes anorexia, bulimia, and binge-eating. These are serious illnesses affecting physical and mental health.
-     </p>
-     <ul>
-      <li>
-       Preoccupation with weight or body image
-      </li>
-      <li>
-       Extreme food restriction or bingeing
-      </li>
-      <li>
-       Purging through vomiting or laxatives
-      </li>
-      <li>
-       Distorted body perception
-      </li>
-      <li>
-       Social withdrawal or shame about eating
-      </li>
-     </ul>
-     <div class="solution">
-      <strong>
-       Solution:
-      </strong>
-      Nutritional counseling, family therapy, and working with an eating disorder specialist.
-     </div>
-     <p>
-      <a href="https://www.nimh.nih.gov/health/topics/eating-disorders" target="_blank">
-       Learn More
-      </a>
-     </p>
-     <p>
-     </p>
-    </div>
+  <h3>Eating Disorder</h3>
+  <p>
+    Eating disorders are serious and often life-threatening mental health conditions marked by disturbed eating behaviors, distorted body image, and emotional struggles linked to food, weight, and self-worth. They are not choices or phases — they are complex illnesses that deeply affect a person’s mind, body, and daily life.
+    <span class="dots">...</span>
+  </p>
+  <div class="more-text">
+    <p>These disorders go far beyond concerns about appearance. At their core, they’re often fueled by a need for control, a way to cope with emotional pain, past trauma, low self-esteem, perfectionism, or the crushing pressure to meet unrealistic societal standards. They are deeply rooted in both psychological distress and neurobiological changes.</p>
+    <p>Common types include Anorexia Nervosa (severe food restriction and an intense fear of weight gain), Bulimia Nervosa (cycles of binge eating followed by purging through vomiting, laxatives, or over-exercise), and Binge Eating Disorder (frequent episodes of overeating without purging, often tied to emotional numbness or shame).</p>
+    <p>Common types include Anorexia Nervosa (severe food restriction and an intense fear of weight gain), Bulimia Nervosa (cycles of binge eating followed by purging through vomiting, laxatives, or over-exercise), and Binge Eating Disorder (frequent episodes of overeating without purging, often tied to emotional numbness or shame).</p>
+    <p>Neurologically, eating disorders involve dysfunctions in several brain areas. The insula, which helps recognize hunger and fullness signals, becomes impaired. The amygdala, which processes fear and anxiety, becomes overactive. The prefrontal cortex, responsible for decision-making and impulse control, may function poorly. There are also imbalances in serotonin and dopamine, which affect mood, appetite, and reward systems.</p>
+    <p>Physically, eating disorders can wreak havoc on nearly every system in the body. Over time, they can cause bone loss, heart problems, hormonal disruptions, digestive issues, brain fog, and in severe cases, can even lead to organ failure or death. The body begins to shut down in response to long-term deprivation or damage.</p>
+    <p>In daily life, eating disorders often go unnoticed because people learn to hide them. Someone may obsessively count calories, refuse to eat in front of others, exercise excessively, or secretly binge and purge — all while looking “normal” on the outside. But inside, there’s a constant war between the mind and body, driven by shame, fear, and the belief that they are never “enough.”</p>
+   <p>Recovery is not just about food — it’s about healing the pain beneath the behaviors. It’s a deeply emotional and physical journey, one that requires compassion, patience, and support. But with the right help, healing is not only possible — it’s powerful.</p>
+  </div>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read more</button>
+<h4>🧾 Symptoms:</h4>
+  <ul>
+    <li>Restlessness or feeling on edge</li>
+    <li>Rapid heartbeat</li>
+    <li>Trouble concentrating</li>
+    <li>Sleep disturbances</li>
+    <li>Constant worry or fear</li>
+  </ul>
+  <div class="solution">
+    <strong>Solution:</strong>
+    Practice deep breathing, limit stimulants, and engage in CBT or exposure therapy with a trained professional.
+  </div>
+  <p>
+    <a href="https://www.nimh.nih.gov/health/topics/eating-disorders" target="_blank">Learn More</a>
+  </p>
+</div>
    </div>
    <div class="healthy-box" id="healthy">
     <h3>
@@ -578,10 +553,39 @@
      📖 Calming Narratives
     </h3>
     <p>
-     “You are lying in a meadow. The sun warms your skin. The breeze whispers that you are safe. You breathe in deeply — and let go.”
-    </p>
-    <p>
-     Come back to this moment whenever the world feels heavy.
+     “You are lying in a quiet meadow.
+The sun wraps you in warmth — not to burn, but to hold.
+The breeze brushes your cheeks like a whisper:
+     </p>
+   <p>
+“You’re still here. You’re still trying. That’s enough.”
+   </p>
+   <p>
+Your chest rises slowly. You let the world fade for just a moment…
+And in that stillness, something soft inside you says:
+   </p>
+   <p>
+   “You deserve peace. You always have.”
+       </p>
+   <p>
+But why is it that when your bones break, the world rushes to help…
+Yet when your soul cracks, you’re told to “be strong”?
+Why do we hide pain behind smiles when our minds are screaming?
+        </p>
+   <p>
+Mental health is not invisible.
+It lives in silent battles, in late-night tears, in fake laughter, and unspoken fears.
+And yet, so few dare to ask, “Are you really okay?”
+      </p>
+   <p>
+This space — this story — is your reminder that you’re not alone.
+Not weak. Not dramatic.
+Just human… and hurting in ways the world forgot to understand.
+      </p>
+   <p>
+But here, we remember.
+And here, you begin again.
+Breathe — not to survive, but to truly live.”
     </p>
    </div>
    <div class="healthy-box" id="future-note">
@@ -740,6 +744,20 @@ function saveNote() {
 function loadNote() {
   const saved = localStorage.getItem("futureNote");
   document.getElementById("savedNote").textContent = saved ? saved : "No note saved yet.";
+}
+function toggleReadMore(btn) {
+  const dots = btn.parentElement.querySelector(".dots");
+  const moreText = btn.parentElement.querySelector(".more-text");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+    btn.textContent = "Read more";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+    btn.textContent = "Read less";
+  }
 }
    </script>
   </nav>
